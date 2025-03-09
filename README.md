@@ -17,6 +17,7 @@ To develop and test this theme locally before deploying to the live site, follow
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [Yarn](https://yarnpkg.com/) or npm
 - [Ghost CLI](https://ghost.org/docs/ghost-cli/) (`npm install ghost-cli@latest -g`)
+- [SQLite3](https://www.sqlite.org/) (required for automatic theme activation)
 
 ### Quick Start (Recommended)
 
@@ -37,6 +38,7 @@ We've created convenience scripts to make local development easier:
    - Install Ghost in local development mode
    - Create a symbolic link to your theme
    - Build your theme
+   - **Automatically activate your theme** (no manual upload needed)
 
 3. For future development sessions, simply run:
    ```bash
@@ -44,11 +46,26 @@ We've created convenience scripts to make local development easier:
    ```
    This will:
    - Start your local Ghost instance if it's not running
+   - Ensure your theme is activated
    - Start the theme development server with live reloading
 
 4. Access your local Ghost instance:
-   - Website: http://localhost:2368
-   - Admin panel: http://localhost:2368/ghost/
+   - Website: http://localhost:2370 (port may vary)
+   - Admin panel: http://localhost:2370/ghost/ (port may vary)
+
+5. Make changes to your theme files:
+   - Edit CSS files in `assets/css/`
+   - Edit template files (`.hbs`)
+   - Changes will be automatically compiled and applied
+   - **No need to manually upload the theme zip file**
+
+### How It Works
+
+Our development scripts use SQLite to directly modify the Ghost database and activate the Healthyfied theme. This creates a seamless development experience where:
+
+1. Your theme is automatically activated
+2. Changes to CSS and JavaScript are immediately compiled and reflected
+3. Changes to template files are recognized when you refresh the browser
 
 ### Manual Setup (Alternative)
 
