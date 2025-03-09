@@ -18,7 +18,41 @@ To develop and test this theme locally before deploying to the live site, follow
 - [Yarn](https://yarnpkg.com/) or npm
 - [Ghost CLI](https://ghost.org/docs/ghost-cli/) (`npm install ghost-cli@latest -g`)
 
-### Setting Up Local Ghost Instance
+### Quick Start (Recommended)
+
+We've created convenience scripts to make local development easier:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/JE-Ramos/healthyfied-blog.git
+   cd healthyfied-blog
+   ```
+
+2. Run the setup script to install a local Ghost instance and link your theme:
+   ```bash
+   ./setup-local-ghost.sh
+   ```
+   This will:
+   - Create a `ghost-local` directory (ignored by Git)
+   - Install Ghost in local development mode
+   - Create a symbolic link to your theme
+   - Build your theme
+
+3. For future development sessions, simply run:
+   ```bash
+   ./dev.sh
+   ```
+   This will:
+   - Start your local Ghost instance if it's not running
+   - Start the theme development server with live reloading
+
+4. Access your local Ghost instance:
+   - Website: http://localhost:2368
+   - Admin panel: http://localhost:2368/ghost/
+
+### Manual Setup (Alternative)
+
+If you prefer to set up everything manually, follow these steps:
 
 1. Create a directory for your local Ghost installation:
    ```bash
@@ -33,32 +67,30 @@ To develop and test this theme locally before deploying to the live site, follow
 
 3. After installation, Ghost will be running at http://localhost:2368 with the admin panel at http://localhost:2368/ghost/
 
-### Working with the Theme
-
-1. Clone this repository:
+4. Clone this repository:
    ```bash
    git clone https://github.com/JE-Ramos/healthyfied-blog.git
    cd healthyfied-blog
    ```
 
-2. Install dependencies:
+5. Install dependencies:
    ```bash
    yarn install
    ```
 
-3. Build the theme and create a zip file:
+6. Build the theme and create a zip file:
    ```bash
    yarn zip
    ```
    This will create a `healthyfied.zip` file in the `dist/` directory.
 
-4. Upload the theme to your local Ghost instance:
+7. Upload the theme to your local Ghost instance:
    - Go to http://localhost:2368/ghost/#/settings/design/change-theme
    - Click "Upload a theme"
    - Select the `dist/healthyfied.zip` file
    - Activate the theme
 
-5. For active development with live reloading:
+8. For active development with live reloading:
    ```bash
    yarn dev
    ```

@@ -39,4 +39,7 @@ Thumbs.db
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.yarn/install-state.gz 
+.yarn/install-state.gz
+
+# Local Ghost installation
+ghost-local/ 
