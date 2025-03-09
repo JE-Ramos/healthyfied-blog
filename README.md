@@ -122,6 +122,20 @@ The `zip` Gulp task packages the theme files into `dist/healthyfied.zip`, which 
 yarn zip
 ```
 
+### Validating Your Theme
+
+Before deploying your theme, it's a good idea to validate it to ensure compatibility with Ghost:
+
+```bash
+# Quick validation of the theme directory
+yarn test
+
+# Comprehensive validation (builds, zips, and validates both directory and zip)
+yarn validate
+```
+
+This uses [GScan](https://github.com/TryGhost/GScan), Ghost's theme validator, to check for any compatibility issues.
+
 ## Deployment
 
 This theme is designed to work with Ghost's cloud hosting. After making changes:

@@ -82,8 +82,10 @@
     },
     "scripts": {
         "dev": "gulp",
-        "test": "gscan .",
-        "zip": "gulp zip"
+        "test": "npx gscan .",
+        "zip": "gulp zip",
+        "build": "gulp build",
+        "validate": "./scripts/validate-theme.sh"
     },
     "devDependencies": {
         "@tryghost/shared-theme-assets": "2.4.5",
