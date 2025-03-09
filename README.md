@@ -2,7 +2,7 @@
 
 A customized Ghost theme for the Healthyfied blog, based on the Ruby theme. This theme features a multi-column layout with a unique card design to organize content effectively.
 
-**Website: https://healthyfiedme.com**
+**Website: https://healthyfied.me**
 
 ## About
 
