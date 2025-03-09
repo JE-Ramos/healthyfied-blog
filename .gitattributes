@@ -1,0 +1,7 @@
+# Exclude files from being included in the theme zip
+scripts/ export-ignore
+.git/ export-ignore
+.github/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+.cursor/ export-ignore 

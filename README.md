@@ -30,7 +30,7 @@ We've created convenience scripts to make local development easier:
 
 2. Run the setup script to install a local Ghost instance and link your theme:
    ```bash
-   ./setup-local-ghost.sh
+   ./scripts/setup-local-ghost.sh
    ```
    This will:
    - Create a `ghost-local` directory (ignored by Git)
@@ -40,7 +40,7 @@ We've created convenience scripts to make local development easier:
 
 3. For future development sessions, simply run:
    ```bash
-   ./dev.sh
+   ./scripts/dev.sh
    ```
    This will:
    - Start your local Ghost instance if it's not running
