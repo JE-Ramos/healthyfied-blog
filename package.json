@@ -1,23 +1,26 @@
 {
-    "name": "ruby",
-    "description": "A Ghost theme",
-    "version": "1.0.4",
+    "name": "healthyfied",
+    "description": "A custom Ghost theme for Healthyfied blog",
+    "version": "1.0.0",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "JE-Ramos",
+        "email": "contact@healthyfiedme.com",
+        "url": "https://healthyfiedme.com"
     },
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "health",
+        "nutrition",
+        "wellness"
     ],
-    "docs": "https://ruby.ghost.io/about/",
+    "docs": "https://healthyfiedme.com/about/",
     "config": {
         "posts_per_page": 12,
         "image_sizes": {

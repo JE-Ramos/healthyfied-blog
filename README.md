@@ -1,15 +1,14 @@
-# Ruby
+# Healthyfied Blog
 
-A multi-column [Ghost](https://github.com/TryGhost/Ghost) theme with a unique card layout. Make your publication more organized with cards and widgets.
+A customized Ghost theme for the Healthyfied blog, based on the Ruby theme. This theme features a multi-column layout with a unique card design to organize content effectively.
 
-**Demo: https://ruby.ghost.io**
+**Website: https://healthyfiedme.com**
 
-# Instructions
+## About
 
-1. [Download this theme](https://github.com/TryGhost/Ruby/archive/main.zip)
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+Healthyfied is a blog focused on healthy living, nutrition, and wellness. This repository contains the custom Ghost theme used for the blog.
 
-# Development
+## Development
 
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
@@ -23,16 +22,21 @@ yarn dev
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
-The `zip` Gulp task packages the theme files into `dist/ruby.zip`, which you can then upload to your site.
+The `zip` Gulp task packages the theme files into `dist/healthyfied.zip`, which you can then upload to your Ghost site.
 
 ```bash
 yarn zip
 ```
 
-# Contribution
+## Deployment
 
-This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
+This theme is designed to work with Ghost's cloud hosting. After making changes:
 
-# Copyright & License
+1. Create a zip file using `yarn zip`
+2. Log into your Ghost admin panel
+3. Go to Settings > Design
+4. Upload the zip file
 
-Copyright (c) 2013-2023 Ghost Foundation - Released under the [MIT license](LICENSE).
+## License
+
+Based on the Ruby theme by Ghost Foundation - Released under the [MIT license](LICENSE).
