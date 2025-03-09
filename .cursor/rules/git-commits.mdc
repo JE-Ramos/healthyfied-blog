@@ -1,0 +1,32 @@
+# Git Commit Standards
+
+When generating commit messages, always follow the Conventional Commits specification:
+
+## Format
+`<type>(<scope>): <description>`
+
+## Types
+- **feat**: A new feature
+- **fix**: A bug fix
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **perf**: A code change that improves performance
+- **test**: Adding missing tests or correcting existing tests
+- **build**: Changes that affect the build system or external dependencies
+- **ci**: Changes to CI configuration files and scripts
+- **chore**: Other changes that don't modify src or test files
+- **revert**: Reverts a previous commit
+
+## Guidelines
+- Keep commit messages concise (under 72 characters for the first line)
+- Use the imperative mood ("Add feature" not "Added feature")
+- For the body, explain "why" not "how" when additional context is needed
+- Reference issues and pull requests liberally after the first line
+
+## Examples
+- feat(theme): add dark mode toggle
+- fix(layout): resolve mobile navigation overflow
+- docs(readme): update deployment instructions
+- style(css): improve card component styling
+- refactor(helpers): simplify post rendering logic 

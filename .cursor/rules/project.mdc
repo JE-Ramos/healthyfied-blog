@@ -1,0 +1,21 @@
+# Healthyfied Blog Project Rules
+
+You are assisting with the Healthyfied blog project, a Ghost theme for a health and wellness blog.
+The website is hosted at https://healthyfied.me
+This is a customized Ghost theme based on the Ruby theme.
+
+## Project Guidelines
+- Follow modern JavaScript best practices
+- Use CSS with PostCSS for styling
+- Maintain clean, readable code with proper documentation
+- Respect the existing project structure and naming conventions
+- Ensure all changes maintain compatibility with Ghost >=5.0.0
+- Test all visual changes across mobile, tablet, and desktop viewports
+- Maintain accessibility standards (WCAG 2.1 AA)
+- Focus on performance optimization for images and scripts
+
+## Development Workflow
+- Use 'yarn dev' for local development
+- Test changes with 'yarn test' before committing
+- Create zip packages with 'yarn zip' for deployment
+- Upload to Ghost admin panel for deployment 
