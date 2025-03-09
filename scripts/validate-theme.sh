@@ -18,16 +18,14 @@ fi
 echo -e "${YELLOW}Building the theme...${NC}"
 yarn build
 
-# Validate the theme directory
-echo -e "${YELLOW}Validating theme directory...${NC}"
-npx gscan .
-
 # Create a zip file
 echo -e "${YELLOW}Creating theme zip file...${NC}"
 yarn zip
 
-# Validate the zip file
+# Validate the zip file (this is what matters most)
 echo -e "${YELLOW}Validating theme zip file...${NC}"
 npx gscan -z dist/healthyfied.zip
 
-echo -e "${GREEN}Validation complete!${NC}" 
+echo -e "${GREEN}Validation complete!${NC}"
+echo -e "${YELLOW}Note: You may see errors related to Ghost core files or symbolic links during development.${NC}"
+echo -e "${YELLOW}These can be safely ignored as long as your theme zip file passes validation.${NC}" 

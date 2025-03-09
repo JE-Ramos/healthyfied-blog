@@ -82,7 +82,7 @@
     },
     "scripts": {
         "dev": "gulp",
-        "test": "npx gscan .",
+        "test": "npx gscan -z dist/healthyfied.zip",
         "zip": "gulp zip",
         "build": "gulp build",
         "validate": "./scripts/validate-theme.sh"
